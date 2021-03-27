@@ -1,3 +1,4 @@
+include ':quizlet'
 include ':base'
 include ':speech_trainer'
 include ':translator'

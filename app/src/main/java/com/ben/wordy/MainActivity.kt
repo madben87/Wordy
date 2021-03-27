@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.ben.base.AutoClearedValue
+import com.ben.quizlet.QuizletFragment
 import com.ben.speech_trainer.ChatFragment
 import com.ben.wordy.adapter.SlidePageAdapter
 import com.ben.wordy.databinding.ActivityMainBinding
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initView() {
         adapter = SlidePageAdapter(this)
-        adapter.addTab(ChatFragment(), "Quiz")
+        adapter.addTab(QuizletFragment(), "Quiz")
         adapter.addTab(ChatFragment(), "Chat")
         binding.viewPager.adapter = adapter
         mediator = TabLayoutMediator(binding.tabLayout, binding.viewPager) {
